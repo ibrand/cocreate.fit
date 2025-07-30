@@ -28,7 +28,6 @@
   --body-font: "Satoshi";
 
   --header-and-footer-font-size: 27px;
-  --header-height: 230px;
 }
 
 body {
@@ -117,7 +116,6 @@ nav, .footer {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-size: var(--header-and-footer-font-size);
     font-family: var(--header-font);
 }
 
@@ -125,6 +123,7 @@ nav, .footer {
     line-height: 32px;
     text-align: right;
     flex-wrap: wrap;
+    font-size: var(--header-and-footer-font-size);
 }
 
 nav li, .footer li {
@@ -219,6 +218,16 @@ img {
     h5 {
         font-size: 20px;
     }
+
+    footer {
+        height: auto;
+    }
+
+    .footer {
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        font-size: 18px;
+    }
 }
 
 @media screen and (max-width: 1200px) {
@@ -246,5 +255,10 @@ img {
         flex-direction: column;
         height: 100vh;
         animation: ease 10 seconds;
+    }
+
+    .attribution p {
+        line-height: 1.5;
+        font-size: 14px;
     }
 }
