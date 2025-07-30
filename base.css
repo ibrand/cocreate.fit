@@ -1,0 +1,243 @@
+@font-face {
+    font-family: 'BadTyp';
+    src: url('./fonts/BadTyp.otf') format('embedded-opentype'), /* Internet Explorer */
+         url('./fonts/BadTyp.otf') format('woff2'),             /* Super Modern Browsers */
+         url('./fonts/BadTyp.otf') format('woff'),              /* Pretty Modern Browsers */
+         url('./fonts/BadTyp.otf') format('truetype'),          /* Safari, Android, iOS */
+         url('./fonts/BadTyp.otf') format('svg');               /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'Satoshi';
+    src: url('./fonts/Satoshi-Regular.otf') format('embedded-opentype'), /* Internet Explorer */
+         url('./fonts/Satoshi-Regular.otf') format('woff2'),             /* Super Modern Browsers */
+         url('./fonts/Satoshi-Regular.otf') format('woff'),              /* Pretty Modern Browsers */
+         url('./fonts/Satoshi-Regular.otf') format('truetype'),          /* Safari, Android, iOS */
+         url('./fonts/Satoshi-Regular.otf') format('svg');               /* Legacy iOS */
+}
+
+
+:root {
+  --primary-color: #BF4E24;
+  --secondary-color: #F4A300;
+  --accent-overlay: #6B4C56;
+  --background-soft: #F6C7A4;
+  --background-neutral: #D7B595;
+  --background-dark: #000;
+  --header-font: "BadTyp";
+  --body-font: "Satoshi";
+
+  --header-and-footer-font-size: 27px;
+  --header-height: 230px;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: var(--body-font);
+
+    -webkit-transition:background-position 2s ease;
+	-moz-transition:background-position 2s ease;
+	-o-transition:background-position 2s ease;
+	transition:background-position 2s ease;
+}
+
+h1, h2, h3 {
+    font-family: var(--header-font);
+    text-transform: capitalize;
+    box-sizing: border-box;
+    margin: 0px 0px 16px;
+    min-width: 0px;
+    font-weight: 500;
+    line-height: 1.25;
+    text-align: left;
+}
+
+h1, h2 {
+    font-size: 64px;
+    margin: 0px;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+h4 {
+    font-family: var(--body-font);
+    font-size: 32px;
+    margin: 0px;
+}
+
+h5 {
+    font-size: 24px;
+    margin-bottom: 0px;
+}
+
+p, pre {
+    font-size: 18px;
+}
+
+ul {
+    padding-left: 15px;
+}
+
+nav, footer {
+    background: var(--background-dark);
+    color: white;
+    text-align: left;
+}
+
+nav {
+    height: 20vh;
+    line-height: 20px;
+    padding: 0 2em;
+}
+
+/* Hide the hamburger menu */
+nav .icon {
+  display: none;
+}
+
+footer {
+    height: 35vh;
+    padding: 2em 2em;
+}
+
+nav, .footer {
+    text-transform: uppercase;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: var(--header-and-footer-font-size);
+    font-family: var(--header-font);
+}
+
+.footer {
+    line-height: 32px;
+    text-align: right;
+    flex-wrap: wrap;
+}
+
+nav li, .footer li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a, footer a {
+    font-family: var(--header-font);
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover, footer a:hover {
+    color: var(--secondary-color);
+}
+
+.footer .primary-btn {
+    padding: 7px;
+    margin-top: 8px;
+}
+
+.attribution {
+    border-top: 1px solid white;
+    background: var(--background-dark);
+    color: white;
+    line-height: 10px;
+    margin-top: 15px;
+}
+
+.attribution a {
+    font-family: var(--body-font);
+}
+
+.logo {
+    width: 20vh;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.gallery-image {
+    height: 55vh;
+    min-height: 400px;
+    width: 100%;
+}
+
+.cover-image {
+    height: auto;
+}
+
+.primary-btn, .secondary-btn {
+    padding: 25px 30px;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    font-family: var(--header-font);
+    display: block;
+}
+
+.primary-btn:hover, .secondary-btn:hover {
+    color: white;
+}
+
+.primary-btn {
+    background-color: var(--primary-color);
+}
+
+.secondary-btn {
+    background-color: var(--secondary-color);
+}
+
+.text-highlight {
+    color: var(--secondary-color);
+}
+
+.spacer {
+    padding: 15px 0px;
+}
+
+@media screen and (max-width: 500px) {
+    h2, h3 {
+        font-size: 32px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    nav a, nav .primary-btn {
+        display: none;
+    }
+
+    nav.responsive a {
+        display: block;
+    }
+
+    nav .icon {
+        display: block;
+        order: 10; /* nav doesn't go to 10, but I want it always last when menu isn't open */
+    }
+
+    nav.responsive .icon {
+        order: -1; /* This should be at the top always */
+        align-self: flex-end;
+    }
+
+    nav.responsive {
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        height: 100vh;
+        animation: ease 10 seconds;
+    }
+}

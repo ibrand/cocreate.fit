@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ilona</title>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="home.css">  
+  </head>
+  <body class="home">
+    <nav class="nav">
+      <a class="logo" href="/"><img src="assets/headerLogo.png"></a>
+      <li><a href="/about">About</a></li>
+      <li><a href="/offerings">Offerings</a></li>
+      <li><a href="/testimonials">Testimonials</a></li>
+      <li><a href="/book" class="primary-btn">Book with me</a></li>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    <section class="hero container overlay" style="background-image:url('assets/images/homepageHero.jpg')">
+      <h2 class="hero1-text">Building Strength for <span class="text-highlight">Community</span></h2>
+    </section>
+    <section class="container divider">
+      <h2><span class="text-highlight">Hi, I'm Ilona,</span></h2>
+      <h3>A strength trainer in minneapolis</h3>
+    </section>
+    <div>
+    <section class="container bg-primary">
+      <div class="gallery-image-container">
+        <img class="gallery-image" src="assets/images/portrait.jpg" />
+      </div>
+      <div class="text-container">
+        <h4>I offer personalized, affirming movement for anyone who wants to feel more at home in their body.</h4>
+        <p>With over a decade of lifting experience and a wide range of goals under my own belt, I’m here to support others through theirs, whether they be gender euphoria, pain reduction, or lifting heavy weights.</p>
+        <p>What ties it all together is this: strength is about authorship. It’s how we reclaim our bodies and write new stories with them.</p>
+        <div class="spacer"></div>
+        <div class="btn-container">
+          <a class="secondary-btn mr-8" href="/about">More about me</a>
+          <a class="secondary-btn" href="/offerings">My Offerings</a>
+        </div>
+      </div>
+    </section>
+    <section class="container">
+      <div class="text-container">
+        <h4><b>I believe in building strength that helps you show up for yourself and for the people and beings you care about.</b></h4>
+        <p>This strength helps you carry groceries and grief - this is the kind of strength that builds capacity for the world to come. </p>
+        <p>I’ll meet you where you’re at - starting fresh, coming back from injury, or hitting a plateau at the gym. Together, we’ll build a training practice that builds your capacity and the way you want to move through the world.</p>
+      </div>
+      <div class="gallery-image-container">
+        <img style="object-position: 0 35%;" class="gallery-image" src="assets/images/ilonaAndLauraWithBands.jpg" />
+      </div>
+    </section>
+    <section class="image-cover container" style="background-image:url('assets/images/resistanceBandStockPhoto.jpg')">
+      <div class="testimonial">
+        <p>
+          “As a trainer, Ilona is curious and communicative. He is a great listener and observer, and escalates workouts at the pace of my body's ability, rather than following any presupposed timelines.
+        </p>
+        <p>
+          I have seen so many functional improvements to my daily life because of our work together!”
+        </p>
+        <p>Thair, Former Client</p>
+      </div>
+      <a class="primary-btn" href="/testimonials">More testimonials</a>
+    </section>
+    <section class="container divider">
+      <h3><span class="text-highlight">My Offerings</span></h3>
+      <p>Training with me starts with listening - to what you want, what you’re carrying, and how you move through the world. We’ll train with care, skill, and enough structure to hold whatever you’re here to grow.</p>
+    </section>
+    <section class="offerings-container bg-primary">
+      <!-- https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html -->
+      <a href="/offerings#1on1" class="offering">
+        <img class="offerings-thumbnail" src="assets/images/1to1CoachingThumbnail.jpg" />
+        <h3>One on one Coaching</h3>
+      </a>
+
+      <a href="/offerings#programs" class="offering">
+        <img class="offerings-thumbnail" src="assets/images/resistanceBandStockPhoto.jpg" />
+        <h3>Self guided programs</h3>
+      </a>
+
+      <a href="/offerings#movement-consults" class="offering">
+        <img class="offerings-thumbnail" src="assets/images/movementConsultsThumbnail.jpg" />
+        <h3>Movement Consults</h3>
+      </a>
+
+
+      <a class="secondary-btn" href="/offerings">See all my offerings</a>
+    </section>
+    <footer>
+      <div class="footer">
+        <a class="logo" href="/"><img src="assets/footerLogo.png"></a>
+        <div>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/offerings">Offerings</a></li>
+          <li><a href="/testimonials">Testimonials</a></li>
+          <li><a href="/book" class="primary-btn">Book with me</a></li>
+        </div>
+      </div>
+      <div class="attribution">
+        <!-- TODO href -->
+        <p>Design and photos by <a class="text-highlight" href="">Zieke Design</a></p>
+        <p>Copyright © 2025 Co-Create Fitness / All Rights Reserved</p>
+      </div>
+    </footer>
+	  <script src="script.js"></script>
+  </body>
+</html>
