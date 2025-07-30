@@ -50,21 +50,28 @@ h1, h2, h3 {
     font-weight: 500;
     line-height: 1.25;
     text-align: left;
+    margin: 0px;
 }
 
-h1, h2 {
+h1 {
+    font-size: 78px;
+}
+
+h2 {
     font-size: 64px;
-    margin: 0px;
 }
 
 h3 {
     font-size: 48px;
 }
 
-h4 {
-    font-family: var(--body-font);
+h4, .smaller-h1 {
     font-size: 32px;
     margin: 0px;
+}
+
+h4 {
+    font-family: var(--body-font);
 }
 
 h5 {
@@ -203,7 +210,7 @@ img {
 }
 
 @media screen and (max-width: 500px) {
-    h2, h3 {
+    h2, h3, .smaller-h1 {
         font-size: 32px;
     }
     h4 {

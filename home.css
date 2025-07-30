@@ -75,9 +75,8 @@
     position: absolute;
     top: 50px;
     right: 15%;
-    width: 45%;
+    width: 65%;
     align-self: flex-start;
-    font-size: 56px;
     text-align: center;
 }
 
@@ -87,11 +86,11 @@
     height: 32%;
     flex-wrap: wrap;
     align-content: center;
+    padding: 40px;
 }
 
-.divider h2 {
-    font-size: 96px;
-    width: 100%;
+.divider h1 {
+    line-height: .7;
 }
 
 .about-me {
@@ -150,18 +149,39 @@
         top: 80px;
         right: 7%;
         width: 70%;
-        font-size: 54px;
         text-align: right;
     }
 }
 
 @media (max-width: 700px) {
-  .container {
-    flex-direction: column;
-  }
+    .logo {
+        width: 13vh;
+    }
 
-  .gallery-image-container, .text-container {
-    width: 90%;
-    margin: auto;
-  }
+    .container {
+        flex-direction: column;
+    }
+
+    .text-container h4 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .gallery-image-container, .text-container {
+        width: 90%;
+        text-align: justify;
+        margin: auto;
+    }
+
+    .hero1-text {
+        width: 100%;
+    }
+
+    .divider h1 .text-highlight {
+        line-height: 1;
+    }
+
+    .divider h1 .smaller-h1 {
+        line-height: 0;
+    }
 }
