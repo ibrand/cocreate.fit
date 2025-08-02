@@ -113,6 +113,7 @@
     color: white;
     padding: 20px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 .offerings-container {
@@ -161,6 +162,19 @@
         width: 70%;
         text-align: right;
     }
+
+    .btn-container {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .btn-container .secondary-btn {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 700px) {
@@ -181,6 +195,11 @@
         width: 90%;
         text-align: justify;
         margin: auto;
+    }
+
+    .hero, .image-cover {
+        height: 58vh;
+        justify-content: space-around;
     }
 
     .hero1-text {
