@@ -1,0 +1,106 @@
+h1 {
+    font-size: 64px;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.overlay:before {
+  content: "";
+  display: block;
+  position: absolute;
+  color: white;
+  background: var(--accent-overlay);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px;
+  opacity: 30%;
+}
+
+.hero {
+    background-position: 10%;
+
+    width: 100%;
+    padding: 40px;
+    height: 60vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    /* make text white */
+    color: white;
+}
+
+.hero h1 {
+    width: 20%;
+    text-align: center;
+    position: absolute;
+}
+
+.main-booking-container {
+    height: 70vh;
+}
+
+.main-booking-container h4, .main-booking-container p {
+    text-align: center;
+    width: 100%;
+}
+
+.divider {
+    background: var(--accent-overlay);
+    color: white;
+    height: 32%;
+    flex-wrap: wrap;
+    align-content: center;
+    padding: 40px;
+}
+
+.divider p {
+    width: 100%;
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    align-self: center;
+    margin: auto;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 48px;
+    }
+
+    .hero {
+        padding: 20px;
+        background-position: 60%;
+    }
+
+    .btn-container {
+        width: 100%;
+        justify-items: space-between;
+        flex-wrap: wrap;
+    }
+
+    .btn-container a {
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+}
