@@ -54,7 +54,7 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 78px;
+    font-size: 72px;
 }
 
 h2 {
@@ -210,6 +210,10 @@ img {
 }
 
 @media screen and (max-width: 500px) {
+    h1 {
+        font-size: 64px;
+    }
+
     h2, h3, .smaller-h1 {
         font-size: 32px;
     }
