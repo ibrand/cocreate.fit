@@ -315,7 +315,6 @@ img {
 
     .gallery-image-container, .text-container {
         width: 90%;
-        text-align: justify;
         margin: auto;
     }
 }
