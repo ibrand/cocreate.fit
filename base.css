@@ -94,7 +94,7 @@ nav, footer {
 }
 
 nav {
-    height: 20vh;
+    height: 15vh;
     line-height: 20px;
     padding: 0 2em;
 }
@@ -106,7 +106,7 @@ nav .icon {
 
 footer {
     height: 35vh;
-    padding: 2em 2em;
+    padding: 2em 2em 1em 2em;
 }
 
 nav, .footer {
@@ -161,7 +161,7 @@ nav a:hover, footer a:hover {
 }
 
 .logo {
-    width: 20vh;
+    width: 12vh;
     display: block;
 }
 
@@ -213,9 +213,11 @@ img {
     h2, h3, .smaller-h1 {
         font-size: 32px;
     }
+
     h4 {
         font-size: 24px;
     }
+
     h5 {
         font-size: 20px;
     }
@@ -243,6 +245,10 @@ img {
     nav .icon {
         display: block;
         order: 10; /* nav doesn't go to 10, but I want it always last when menu isn't open */
+    }
+
+    .logo {
+        width: 10vh;
     }
 
     nav.responsive .icon {

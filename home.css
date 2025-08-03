@@ -178,10 +178,6 @@
 }
 
 @media (max-width: 700px) {
-    .logo {
-        width: 13vh;
-    }
-
     .container {
         flex-direction: column;
     }
