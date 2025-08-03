@@ -258,6 +258,8 @@ img {
     nav.responsive .icon {
         order: -1; /* This should be at the top always */
         align-self: flex-end;
+        position: absolute;
+        top: 50px;
     }
 
     nav.responsive {
@@ -265,7 +267,6 @@ img {
         justify-content: space-evenly;
         flex-direction: column;
         height: 100vh;
-        animation: ease 10 seconds;
     }
 
     .attribution p {
