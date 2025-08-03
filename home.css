@@ -1,4 +1,4 @@
-.container, .offerings-container {
+.offerings-container {
     position: relative;
     text-align: center;
     display: flex;
@@ -7,7 +7,7 @@
     box-sizing: border-box;
 }
 
-.hero, .image-cover {
+.image-cover {
     width: 100%;
     padding: 0px;
     background-position: center;
@@ -30,30 +30,6 @@
 
 .image-cover {
     height: 50vh;
-}
-
-
-.overlay:before {
-  content: "";
-  display: block;
-  position: absolute;
-  color: white;
-  background: var(--accent-overlay);
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  padding: 20px;
-  opacity: 30%;
-}
-
-.gallery-image-container {
-    width: 55%;
-    padding: 10px 20px;
-}
-
-.text-container {
-    width: 45%;
 }
 
 .hero1-text {
@@ -163,19 +139,9 @@
 }
 
 @media (max-width: 700px) {
-    .container {
-        flex-direction: column;
-    }
-
     .text-container h4 {
         text-align: center;
         width: 100%;
-    }
-
-    .gallery-image-container, .text-container {
-        width: 90%;
-        text-align: justify;
-        margin: auto;
     }
 
     .hero, .image-cover {

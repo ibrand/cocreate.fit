@@ -21,8 +21,8 @@
   --primary-color: #BF4E24;
   --secondary-color: #F4A300;
   --accent-overlay: #6B4C56;
-  --background-soft: #F6C7A4;
-  --background-neutral: #D7B595;
+  --background-peach: #F6C7A4;
+  --background-sandstone: #D7B595;
   --background-dark: #000;
   --header-font: "BadTyp";
   --body-font: "Satoshi";
@@ -170,6 +170,54 @@ img {
     object-fit: cover;
 }
 
+.container {
+    position: relative;
+    text-align: center;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hero {
+    background-position: 10%;
+    height: 60vh;
+    width: 100%;
+    padding: 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-wrap: wrap;
+
+    /* vertically center elements */
+    align-items: center;
+    /* horizontally center elements */
+    justify-content: center;
+
+    /* make text white */
+    color: white;
+}
+
+.hero h1 {
+    text-align: center;
+    position: absolute;
+}
+
+.overlay:before {
+    content: "";
+    display: block;
+    position: absolute;
+    color: white;
+    background: var(--accent-overlay);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    opacity: 30%;
+}
+
 .gallery-image {
     height: 55vh;
     min-height: 400px;
@@ -225,7 +273,15 @@ img {
     width: 100%;
 }
 
-@media screen and (max-width: 500px) {
+.gallery-image-container {
+    flex-basis: 45%;
+}
+
+.text-container {
+    flex-basis: 50%;
+}
+
+@media screen and (max-width: 700px) {
     h1 {
         font-size: 64px;
     }
@@ -250,6 +306,17 @@ img {
         flex-wrap: nowrap;
         align-items: flex-start;
         font-size: 18px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+
+    .gallery-image-container, .text-container {
+        width: 90%;
+        text-align: justify;
+        margin: auto;
     }
 }
 
