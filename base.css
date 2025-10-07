@@ -281,6 +281,51 @@ img {
     flex-basis: 50%;
 }
 
+.offerings-container {
+    position: relative;
+    text-align: center;
+    display: flex;
+    padding: 20px;
+    flex-direction: row;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    height: auto;
+    font-family: var(--header-font);
+}
+
+.offerings-container h4 {
+    font-family: var(--header-font);
+}
+
+.offering {
+    width: 30%;
+    text-decoration: none;
+    color: white;
+}
+
+.offering-spacer {
+    padding: 40px 0px;
+    width: 100%;
+}
+
+/* need to redo this in JS to get the text and the image's border to change at the same time when hovering the offering parent */
+/* .offering:hover {
+    color: var(--secondary-color);
+}
+
+.offering img:hover {
+    border-color: var(--secondary-color);
+} */
+
+.offerings-thumbnail {
+    border-radius: 15%;
+    border: 3px solid white;
+    width: 100%;
+    height: 90%;
+}
+
 @media screen and (max-width: 700px) {
     h1 {
         font-size: 64px;
@@ -312,10 +357,24 @@ img {
         flex-direction: column;
     }
 
-
     .gallery-image-container, .text-container {
         width: 90%;
         margin: auto;
+    }
+
+    /* Consider making this a carousel */
+    .offerings-container {
+        height: auto;
+    }
+
+    .offering {
+        width: 80%;
+        margin-bottom: 80px;
+    }
+
+    .offering-spacer {
+        padding: 0px 0px;
+        width: 100%;
     }
 }
 

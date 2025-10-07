@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Co-Create Fitness</title>
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="offerings.css">  
+  </head>
+  <body>
+    <nav class="nav">
+      <a class="logo" href="/"><img src="assets/headerLogo.png"></a>
+      <li><a href="/about.html">About</a></li>
+      <li><a href="/offerings.html">Offerings</a></li>
+      <li><a href="/testimonials">Testimonials</a></li>
+      <li><a href="/book.html" class="primary-btn">Book with me</a></li>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+    <section class="hero container overlay" style="background-image:url('assets/images/offeringsHero.jpg');">
+      <h1>Offerings</h1>
+    </section>
+    <section class="offerings-container bg-primary">
+      <!-- https://www.w3docs.com/snippets/html/how-to-create-an-anchor-link-to-jump-to-a-specific-part-of-a-page.html -->
+      <a href="/offerings#1on1" class="offering">
+        <img class="offerings-thumbnail" src="assets/images/1to1CoachingThumbnail.jpg" />
+        <h4>One on one Coaching</h4>
+      </a>
+
+      <a href="/offerings#programs" class="offering">
+        <img class="offerings-thumbnail" src="assets/images/resistanceBandStockPhoto.jpg" />
+        <h4>Self guided programs</h4>
+      </a>
+
+      <a href="/offerings#movement-consults" class="offering">
+        <img class="offerings-thumbnail" src="assets/images/movementConsultsThumbnail.jpg" />
+        <h4>Movement Consults</h4>
+      </a>
+
+      <a href="/offerings#group-classes" class="offering coming-soon">
+        <img class="offerings-thumbnail" src="assets/images/groupClassesThumbnail.jpg" />
+        <h4>Group Classes</h4>
+      </a>
+    </section>
+    <section class="container bg-white">
+      <p>Every offering I create is built from the ground up with your body, your goals, and your lived experience at the center. Whether we’re working together 1:1 or you’re following a self-guided plan, you can expect thoughtful structure, skilled support, and space for whatever you’re here to build.</p>
+      <p>All of my offerings are rooted in:</p>
+      <ul class="values-container">
+        <li>
+          <div class="values-dot"></div>
+          <h4>Joy as a compass</h4>
+          <p>Strength training should feel good - think luscious, playful, and exploratory! What matters is that movement brings you closer to yourself and your goals.</p>
+        </li>
+        <li>
+          <div class="values-dot"></div>
+          <h4>Your body, your goals</h4>
+          <p>Want to build mass? Feel stronger after top surgery? Carry your kid up the stairs? What you’re working towards is yours to define. I’m here to help you build the strength to reach it.</p>
+        </li>
+        <li>
+          <div class="values-dot"></div>
+          <h4>Strength that serves</h4>
+          <p>Strength isn’t just about you - it’s also about what you do with it. I believe the more capacity we build, the more we can show up in service to the world around us.</p>
+        </li>
+        <li>
+          <div class="values-dot"></div>
+          <h4>Consent-driven</h4>
+          <p>You get to say yes or no. You set the pace. I’ll never push you into something that doesn’t feel aligned with your goals. My coaching is rooted in collaboration.</p>
+        </li>
+      </ul>
+    </section>
+    <footer>
+      <div class="footer">
+        <a class="logo" href="/"><img src="assets/footerLogo.png"></a>
+        <div>
+          <li><a href="/">Home</a></li>
+          <li><a href="/about.html">About</a></li>
+          <li><a href="/offerings.html">Offerings</a></li>
+          <li><a href="/testimonials">Testimonials</a></li>
+          <li><a href="/book.html" class="primary-btn">Book with me</a></li>
+        </div>
+      </div>
+      <div class="attribution">
+        <!-- TODO href -->
+        <p>Design and photos by <a class="text-highlight" href="">Zieke Design</a></p>
+        <p>Copyright © 2025 Co-Create Fitness / All Rights Reserved</p>
+      </div>
+    </footer>
+	  <script src="script.js"></script>
+  </body>
+</html>
