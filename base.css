@@ -254,6 +254,15 @@ img {
     color: white;
 }
 
+.bg-secondary {
+    background-color: var(--secondary-color);
+    color: black;
+}
+
+.bg-secondary h2, .bg-secondary h3, .bg-secondary h4 {
+    color: white;
+}
+
 .bg-white {
     background-color: white;
     color: black;
