@@ -1,0 +1,73 @@
+h1 {
+    font-size: 64px;
+    width: 100%;
+}
+
+.container {
+    flex-wrap: wrap;
+}
+
+.hero {
+    padding: 40px;
+    height: 60vh;
+
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    /* make text white */
+    color: white;
+    background-position: 0% 15%;
+}
+
+/* Carousel from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_overflow/CSS_carousels */
+.carousel ul {
+  width: 100vw;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  gap: 4vw;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  box-sizing: border-box;
+  anchor-name: --carousel;
+}
+
+.carousel li {
+  list-style-type: none;
+  background-color: #eeeeee;
+  border: 1px solid #dddddd;
+  padding: 20px;
+
+  flex: 0 0 50%;
+
+  scroll-snap-align: center;
+}
+
+.carousel li {
+    font-size: 22px;
+    text-align: center;
+}
+
+.carousel .client-name {
+    font-size: 16px;
+}
+
+.btn-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    padding-bottom: 50px;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 32px;
+    }
+
+    .hero {
+        padding: 20px;
+        background-position: 60%;
+    }
+}
