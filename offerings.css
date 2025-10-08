@@ -3,6 +3,7 @@
     justify-content: flex-start;
     padding: 40px;
     height: 75vh;
+    background-position: 45%;
 }
 
 .container {
@@ -103,6 +104,10 @@ h5 {
 }
 
 @media (max-width: 700px) {
+    h1 {
+        font-size: 48px;
+    }
+
     .container {
         padding: 20px;
     }
@@ -122,8 +127,21 @@ h5 {
         width: 100%;
     }
 
+    .values-container {
+        padding-left: 5px;
+    }
+
+    .values-dot {
+        width: 50px;
+        height: 50px;
+    }
+
     .values-container li {
         flex-basis: 100%;
+    }
+
+    .values-container h4 {
+        font-size: 18px;
     }
 
     .offering-container {
@@ -136,11 +154,12 @@ h5 {
     }
 
     .offering-container .bg-white p, .offering-container .bg-white ul,
-    .offering-container .bg-white .description {
+    .offering-container .bg-white .description, .offering-container .bg-white h5 {
         width: 100%;
     }
 
     .offering-container .bg-secondary, .offering-container .bg-white {
+        padding: 20px;
         height: auto;
     }
 
