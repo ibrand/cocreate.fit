@@ -19,28 +19,11 @@ h1 {
     background-position: 0% 15%;
 }
 
-/* Carousel from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_overflow/CSS_carousels */
-.carousel ul {
-  width: 100vw;
-  height: auto;
-  padding: 20px;
-  display: flex;
-  gap: 4vw;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  box-sizing: border-box;
-  anchor-name: --carousel;
-}
-
 .carousel li {
-  list-style-type: none;
-  background-color: #eeeeee;
-  border: 1px solid #dddddd;
-  padding: 20px;
-
-  flex: 0 0 75%;
-
-  scroll-snap-align: center;
+    background-color: #eeeeee;
+    border: 1px solid #dddddd;
+    padding: 20px;
+    flex: 0 0 75%;
 }
 
 .carousel li {

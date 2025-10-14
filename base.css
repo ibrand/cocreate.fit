@@ -335,6 +335,25 @@ img {
     height: 90%;
 }
 
+/* Carousel from: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_overflow/CSS_carousels */
+.carousel ul {
+  width: 100vw;
+  height: auto;
+  padding: 20px;
+  display: flex;
+  gap: 4vw;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  box-sizing: border-box;
+  anchor-name: --carousel;
+}
+
+.carousel li {
+  list-style-type: none;
+  flex: 0 0 75%;
+  scroll-snap-align: center;
+}
+
 @media screen and (max-width: 700px) {
     h1 {
         font-size: 64px;
