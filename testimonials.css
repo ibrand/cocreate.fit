@@ -38,7 +38,7 @@ h1 {
   border: 1px solid #dddddd;
   padding: 20px;
 
-  flex: 0 0 50%;
+  flex: 0 0 75%;
 
   scroll-snap-align: center;
 }
@@ -46,6 +46,9 @@ h1 {
 .carousel li {
     font-size: 22px;
     text-align: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
 }
 
 .carousel .client-name {
