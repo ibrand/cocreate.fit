@@ -75,6 +75,7 @@
 
 .carousel li {
   flex: 0 0 26%;
+  margin-bottom: 40px;
   scroll-snap-align: center;
 }
 
@@ -152,7 +153,6 @@ h5 {
 
     .carousel li {
         flex: 0 0 90%;
-        margin-bottom: 40px;
         scroll-snap-align: center;
     }
 
@@ -171,7 +171,8 @@ h5 {
     }
 
     .offering-container .primary-btn {
-        width: 25%;
+        width: 75%;
+        margin: auto;
         text-align: center;
     }
 
