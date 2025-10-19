@@ -29,6 +29,11 @@ h1 {
     position: relative;
     display: block;
     width: 80%;
+    font-family: var(--body-font);
+}
+
+.made-with-formrobin {
+    display: none;
 }
 
 .main-booking-container h4, .main-booking-container p {
