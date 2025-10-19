@@ -1,10 +1,14 @@
+* {
+    position: relative;
+}
+
 h1 {
     font-size: 64px;
 }
 
-.container {
+/* .container {
     flex-wrap: wrap;
-}
+} */
 
 .hero {
     padding: 40px;
@@ -21,8 +25,10 @@ h1 {
     width: 20%;
 }
 
-.main-booking-container {
-    height: 70vh;
+.formrobin-embed {
+    position: relative;
+    display: block;
+    width: 80%;
 }
 
 .main-booking-container h4, .main-booking-container p {
